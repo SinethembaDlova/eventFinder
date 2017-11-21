@@ -10,7 +10,7 @@ define(
         self.allEvents = ko.observableArray([]);
 
         self.eventDetails = function(currentEvent) {
-            console.log(self.currentEvent)
+            console.log(currentEvent)
         }
 
 
