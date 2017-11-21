@@ -9,11 +9,20 @@ define(
 
         self.allEvents = ko.observableArray([]);
 
+        self.eventDetails = function(currentEvent) {
+            console.log(self.currentEvent)
+        }
+
+
+
         $.getJSON(url).done(function(data) {
             // console.log(data);
+
             data.forEach(function(events){
+              // console.log(events);
               self.allEvents.push(events);
             });
+
           });
         };
 

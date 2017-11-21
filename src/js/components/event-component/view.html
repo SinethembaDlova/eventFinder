@@ -1,15 +1,15 @@
 <select class="ui search dropdown" data-bind="foreach: allEvents">
-    <option data-bind="text: $data.eventDetails.eventType"></option>
+    <option data-bind="text: $data.eventDetails.eventType" data-bind="click: eventTypeFilter()"></option>
 </select>
 
 <select class="ui search dropdown" data-bind="foreach: allEvents">
     <option data-bind="text: $data.eventDetails.eventSuburb"></option>
-</select>
+  </select>
 
-<div class="ui relaxed divided list" data-bind="foreach: allEvents">
+<div class="ui relaxed divided list" data-bind="foreach: allEvents, click: eventDetails($data.eventName)">
   <div class="item">
     <div class="content">
-      <a class="header" data-bind="text: $data.eventName"></a>
+      <a class="header"  data-bind="text: $data.eventName"></a>
       <!-- <div class="description">Updated 10 mins ago</div> -->
     </div>
   </div>
