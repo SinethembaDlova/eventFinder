@@ -4,13 +4,20 @@
 
 <select class="ui search dropdown" data-bind="foreach: allEvents">
     <option data-bind="text: $data.eventDetails.eventSuburb"></option>
-  </select>
+</select>
 
 <div class="ui relaxed divided list" data-bind="foreach: allEvents">
-  <div class="item">
-    <div class="content" data-bind="click: $parent.eventDetails" >
-      <a class="header"  data-bind="text: $data.eventName"></a>
+  <div class="item left">
+    <div class="content" data-bind="click: $parent.eventDetails">
+      <a class="header" data-bind="text: $data.eventName"></a>
       <!-- <div class="description">Updated 10 mins ago</div> -->
     </div>
+
+  </div>
+  <div class="ui segment">
+    <h3 data-bind="text: $data.eventName"></h3>
+     Venue: <p data-bind="text: $data.eventDetails.eventSuburb"></p>
+     Date:  <p data-bind="text: $data.eventDetails.eventDate"></p>
+     Time:  <p data-bind="text: $data.eventDetails.eventTime"></p>
   </div>
 </div>
