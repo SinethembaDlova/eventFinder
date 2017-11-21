@@ -5,7 +5,7 @@
 /*
  * Your dashboard ViewModel code goes here
  */
-define(['ojs/ojcore', 'knockout', 'jquery', 'components/event-component/loader'],
+define(['ojs/ojcore', 'knockout', 'jquery', 'components/event-component/loader', 'components/map-component/loader', 'components/weather-component/loader'],
  function(oj, ko, $) {
 
     function DashboardViewModel() {
