@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "jetVersion": "^4.0.0",
   "properties": {
-
+      "iconUrl": {"type": "string"},
+      "tempMeasure":{"type": "number"}
     }
 }

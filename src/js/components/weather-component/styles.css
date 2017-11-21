@@ -1,0 +1,18 @@
+#icon{
+  width: 200px;
+  height: 150px;
+
+  display: inline-block;
+}
+#measure{
+  position: relative;
+  font-size: 10em;
+  top:-20px;
+}
+#weather-container{
+  position: relative;
+}
+.wob_t{
+  position: relative;
+  top: -108px;
+}

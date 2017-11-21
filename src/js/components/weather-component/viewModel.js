@@ -4,7 +4,7 @@ define(
 
     function weatherViewModel(context) {
         var self = this;
-
+        
     };
 
     return weatherViewModel;
