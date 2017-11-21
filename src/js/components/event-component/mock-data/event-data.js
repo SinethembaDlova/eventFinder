@@ -46,7 +46,7 @@
       "eventType": "Entainment",
       "eventDate": "2017-12-1",
       "eventTime": "12:00 pm",
-      "eventSuburb": "Cape Town, Easteriver"
+      "eventSuburb": "Cape Town, Eerste River"
       }
   }
 ]

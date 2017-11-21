@@ -13,7 +13,7 @@ define(
             // console.log(data);
             data.forEach(function(events){
               self.allEvents.push(events);
-            })
+            });
           });
         };
 
