@@ -22,13 +22,14 @@ define(
 
         $.getJSON(url).done(function(data) {
             var typeMap = [];
-            data.forEach(function(events){
-              self.allEvents.push(events);
-              if (typeMap[events.eventDetails.eventType] === undefined) {
-                typeMap[events.eventDetails.eventType] = 0;
-                self.allTypes.push(events.eventDetails.eventType);
+            for (var i = 0; i < data.length; i++) {
+              self.allEvents.push(data[i]);
+
+              if (typeMap[data[i].eventDetails.eventType] === undefined) {
+                typeMap[data[i].eventDetails.eventType] = 0;
+                self.allTypes.push(data[i].eventDetails.eventType);
               };
-            });
+            }
           });
         };
 
