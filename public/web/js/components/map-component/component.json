@@ -1,0 +1,10 @@
+{
+  "name": "map-component",
+  "displayName": "map-component",
+  "description": "Wrapper for Map Component",
+  "version": "1.0.0",
+  "jetVersion": "^4.0.0",
+  "properties": {
+
+    }
+}

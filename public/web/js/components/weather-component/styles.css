@@ -1,0 +1,24 @@
+#icon{
+  width: 50%;
+  height: 150px;
+
+  display: inline-block;
+}
+#measure{
+  position: relative;
+  font-size: 2em;
+  top:-20px;
+}
+#weather-container{
+  position: relative;
+  width: 200px;
+}
+.wob_t{
+  position: relative;
+  top: -108px;
+}
+
+#weather-img-cover{
+  width: 6em;
+  height: 6em;
+}

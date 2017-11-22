@@ -1,0 +1,31 @@
+<div class="col-md-6">
+  <select class="ui fluid dropdown bg-dark text-secondary" data-bind=" options: allTypes, value: chosenType, click: onclick($element.value),"></select>
+</div>
+
+<!-- <select class="ui search dropdown" data-bind="foreach: allEvents">
+    <option data-bind="text: $data.eventDetails.eventSuburb"></option>
+</select> -->
+<!-- <select data-bind="options: availableCountries, selectedOptions: chosenCountries" size="5" multiple="true"></select> -->
+
+<!-- <div class="ui input">
+  <input type="text" data-bind="" placeholder="Search By Type...">
+</div> -->
+
+<div class="ui relaxed divided list" data-bind="foreach: filter">
+  <div class="item left">
+    <div class="content" data-bind="click: $parent.eventDetails">
+      <a class="header" data-bind="text: $data.eventName"></a>
+    </div>
+
+
+  </div>
+  <div class="ui segment">
+    <div class="description"></div>
+    <weather-component data-bind="attr: {city : $data.eventDetails.city, date: $data.eventDetails.eventDate}"></weather-component>
+    <h3 data-bind="text: $data.eventName"></h3>
+     Venue: <p data-bind="text: $data.eventDetails.eventSuburb"></p>
+     Type: <p data-bind="text: $data.eventDetails.eventType"></p>
+     Date:  <p data-bind="text: $data.eventDetails.eventDate"></p>
+     Time:  <p data-bind="text: $data.eventDetails.eventTime"></p>
+  </div>
+</div>
