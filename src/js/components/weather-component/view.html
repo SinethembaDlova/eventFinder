@@ -1,4 +1,4 @@
-<div id="weather-container">
+ <div id="weather-container">
     <div id="icon" data-bind="style: { 'background': iconUrl, 'background-repeat':'no-repeat'}"></div>
     <span id="measure" data-bind="text:tempMeasure"></span><span class="wob_t" style="display:inline" aria-label="°Celsius">°C</span>
 </div>
@@ -7,18 +7,62 @@
   <div class="row">
     <div class="ui four cards mx-4 my-2">
       <a class="black card" id="weather-img-cover">
-        <div class="image">
-          <img src="https://www.metaweather.com/static/img/weather/hr.svg">
-        </div>
+        <div class="image" id="icon" data-bind="style: { 'background': iconUrl, 'background-repeat':'no-repeat'}"></div>
       </a>
     </div>
+  </div>
     <div class="col-md-6 mt-3">
-      <div class="row">
-        <h1 class="mt-4 ml-4 text-center">20 <span class="font-weight-light">&#x2103;</span></h1>
+      <div class="column">
+        <h6>Current Temperature:</h6> <span>
+        <h1 class="mt-4 ml-4 text-center" data-bind="text:tempMeasure"></h1>
+      </span>
+        <h4>&#x2103;</h4>
       </div>
-      <div class="row">
-        <p class="text-center">Today its rainy</p>
+
+      <div class="column">
+        <h6>Max Temperature:</h6> <span>
+        <h1 class="mt-4 ml-4 text-center" data-bind="text:maxTemp"></h1>
+      </span>
+        <h4>&#x2103;</h4>
       </div>
+
+      <div class="row">
+        <p class="text-center" data-bind="text: description"></p>
+      </div>
+    </div>
+
+</div>
+
+<div class="card">
+  <div id="weather-img-cover">
+    <a>
+      <div class="image" id="icon" data-bind="style: { 'background': iconUrl, 'background-repeat':'no-repeat'}"></div>
+    </a>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <h6>Current Temperature:</h6> <span>
+      <h1 class="mt-4 ml-4 text-center" data-bind="text:tempMeasure"></h1>
+    </span>
+      <h4>&#x2103;</h4>
+    </div>
+
+    <div class="row">
+      <h6>Max Temperature:</h6> <span>
+      <h1 class="mt-4 ml-4 text-center" data-bind="text:maxTemp"></h1>
+    </span>
+      <h4>&#x2103;</h4>
+    </div>
+
+    <div class="row">
+      <h6>Min Temperature:</h6> <span>
+      <h1 class="mt-4 ml-4 text-center" data-bind="text:minTemp"></h1>
+    </span>
+      <h4>&#x2103;</h4>
+    </div>
+
+    <div class="row">
+      <p class="text-center" data-bind="text: description" id="description"></p>
     </div>
   </div>
 </div>

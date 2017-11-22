@@ -4,9 +4,10 @@
   "eventName": "Jazz Music Festival",
   "eventDetails": {
     "eventType": "Music",
-    "eventDate": "2017-08-02",
+    "eventDate": "2017-11-24",
     "eventTime": "18:00 pm",
-    "eventSuburb": "Cape Town, Waterfront"
+    "eventSuburb": "Cape Town, Waterfront",
+    "city": "Cape Town"
     }
   },
   {
@@ -14,9 +15,10 @@
     "eventName": "Art Festival",
     "eventDetails": {
       "eventType": "Art",
-      "eventDate": "2017-12-12",
-      "eventTime": "13:00 pm",
-      "eventSuburb": "Cape Town, Khayelitsha"
+      "eventDate": "2017-11-25",
+      "eventTime": "18:00 pm",
+      "eventSuburb": "Cape Town, Khayelitsha",
+      "city": "Cape Town"
       }
   },
   {
@@ -24,9 +26,10 @@
     "eventName": "Kasi Soccer Tournament",
     "eventDetails": {
       "eventType": "Sport",
-      "eventDate": "2017-11-25",
+      "eventDate": "2017-11-23",
       "eventTime": "12:00 pm",
-      "eventSuburb": "Cape Town, Green Point"
+      "eventSuburb": "Cape Town, Green Point",
+      "city": "Durban"
       }
   },
   {
@@ -34,9 +37,10 @@
     "eventName": "Sport Awards",
     "eventDetails": {
       "eventType": "Sport",
-      "eventDate": "2017-12-2",
-      "eventTime": "18:00 pm",
-      "eventSuburb": "Cape Town, CBD"
+      "eventDate": "2017-11-25",
+      "eventTime": "14:00 pm",
+      "eventSuburb": "Cape Town, CBD",
+      "city": "Cape Town"
       }
   },
   {
@@ -44,9 +48,10 @@
     "eventName": "Ipotsoyi",
     "eventDetails": {
       "eventType": "Entainment",
-      "eventDate": "2017-12-1",
+      "eventDate": "2017-11-27",
       "eventTime": "12:00 pm",
-      "eventSuburb": "Cape Town, Eerste River"
+      "eventSuburb": "Cape Town, Eerste River",
+      "city": "Cape Town"
       }
   }
 ]

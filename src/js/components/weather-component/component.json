@@ -9,6 +9,9 @@
       "tempMeasure":{"type": "number"},
       "city": {
         "type": "string"
+      },
+      "date": {
+        "type": "string"
       }
     }
 }
