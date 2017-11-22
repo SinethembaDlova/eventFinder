@@ -1,4 +1,6 @@
-<select class="ui fluid dropdown bg-dark text-secondary" data-bind=" options: allTypes, value: chosenType, click: onclick($element.value),"></select>
+<div class="col-md-6">
+  <select class="ui fluid dropdown bg-dark text-secondary" data-bind=" options: allTypes, value: chosenType, click: onclick($element.value),"></select>
+</div>
 
 <!-- <select class="ui search dropdown" data-bind="foreach: allEvents">
     <option data-bind="text: $data.eventDetails.eventSuburb"></option>
@@ -18,10 +20,8 @@
 
   </div>
   <div class="ui segment">
-    <div class="description"></div>
+    <div class="description"><weather-component></weather-component></div>
     <h3 data-bind="text: $data.eventName"></h3>
-    <weather-component></weather-component>
-    
      Venue: <p data-bind="text: $data.eventDetails.eventSuburb"></p>
      Type: <p data-bind="text: $data.eventDetails.eventType"></p>
      Date:  <p data-bind="text: $data.eventDetails.eventDate"></p>
