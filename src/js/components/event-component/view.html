@@ -1,22 +1,28 @@
-<select class="ui search dropdown" data-bind="foreach: allEvents">
-    <option data-bind="text: $data.eventDetails.eventType" data-bind="click: eventTypeFilter()"></option>
+<select class="ui search dropdown" data-bind="options: allTypes, selectedOptions: chosenType">
+    <!-- <option data-bind="text: $data.eventDetails.eventType" data-bind="click: eventTypeFilter()"></option> -->
 </select>
 
-<select class="ui search dropdown" data-bind="foreach: allEvents">
+<!-- <select class="ui search dropdown" data-bind="foreach: allEvents">
     <option data-bind="text: $data.eventDetails.eventSuburb"></option>
-</select>
+</select> -->
+<!-- <select data-bind="options: availableCountries, selectedOptions: chosenCountries" size="5" multiple="true"></select> -->
+
+<div class="ui input">
+  <input type="text" data-bind="" placeholder="Search By Type...">
+</div>
 
 <div class="ui relaxed divided list" data-bind="foreach: allEvents">
   <div class="item left">
     <div class="content" data-bind="click: $parent.eventDetails">
       <a class="header" data-bind="text: $data.eventName"></a>
-      <!-- <div class="description">Updated 10 mins ago</div> -->
+      <div class="description"><weather-component></weather-component></div>
     </div>
 
   </div>
   <div class="ui segment">
     <h3 data-bind="text: $data.eventName"></h3>
      Venue: <p data-bind="text: $data.eventDetails.eventSuburb"></p>
+     Type: <p data-bind="text: $data.eventDetails.eventType"></p>
      Date:  <p data-bind="text: $data.eventDetails.eventDate"></p>
      Time:  <p data-bind="text: $data.eventDetails.eventTime"></p>
   </div>
