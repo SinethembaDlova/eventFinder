@@ -52,11 +52,19 @@ define(
 
 
           console.log(self.filter())
-
         }
 
+        var event = new Event('build', { detail: "test" });
 
-        };
+// Listen for the event.
+document.addEventListener('build', function (e) {
+    
+}, false);
+
+  // Dispatch the event.
+  document.dispatchEvent(event);
+
+};
 
 
         return eventViewModel;

@@ -6,6 +6,9 @@
   "jetVersion": "^4.0.0",
   "properties": {
       "iconUrl": {"type": "string"},
-      "tempMeasure":{"type": "number"}
+      "tempMeasure":{"type": "number"},
+      "city": {
+        "type": "string"
+      }
     }
 }
