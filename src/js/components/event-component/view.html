@@ -9,7 +9,7 @@
   <input type="text" data-bind="" placeholder="Search By Type...">
 </div> -->
 
-<div class="ui relaxed divided list" data-bind="foreach: allEvents">
+<div class="ui relaxed divided list" data-bind="foreach: filter">
   <div class="item left">
     <div class="content" data-bind="click: $parent.eventDetails">
       <a class="header" data-bind="text: $data.eventName"></a>

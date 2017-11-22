@@ -10,6 +10,7 @@ define(
         // event data
         self.allEvents = ko.observableArray([]);
         self.masterData = ko.observableArray();
+        self.filter = ko.observableArray();
 
         self.eventDetails = function(currentEvent) {
           console.log(currentEvent)
@@ -20,7 +21,7 @@ define(
 
           var typeMap = [];
           for (var i = 0; i < data.length; i++) {
-            self.allEvents.push(data[i]);
+            self.filter.push(data[i]);
 
             if (typeMap[data[i].eventDetails.eventType] === undefined) {
               typeMap[data[i].eventDetails.eventType] = 0;
@@ -32,30 +33,25 @@ define(
         // filter by type
         self.allTypes = ko.observableArray(['All']);
         self.chosenType = ko.observableArray(['All']);
-        self.filter = ko.observableArray();
 
         self.onclick = function(typeVal) {
           let data = self.allEvents();
 
-          for (var i = 0;  i < data.length; i++) {
-            if (data[i].eventDetails.eventType === typeVal) {
-              self.filter.push(data[i]);
-            }
-            // console.log(data[i].eventDetails)
-          }
+          self.filter([]);
 
-          if (self.filter().length === 0) {
-            // self.allEvents([])
-            // self.allEvents.push(self.masterData());
+          if (typeVal === 'All') {
+            self.filter(data)
           } else {
-            let filteredData = self.filter()
-            console.log(self.filter());
-            self.allEvents([])
-
-            for (var x =0; x < filteredData.length; x++) {
-              self.allEvents.push(filteredData[x]);
+            for (var i = 0;  i < data.length; i++) {
+              if (data[i].eventDetails.eventType === typeVal) {
+                self.filter.push(data[i]);
+              }
+              // console.log(data[i].eventDetails)
             }
           }
+
+
+          console.log(self.filter())
 
         }
 
