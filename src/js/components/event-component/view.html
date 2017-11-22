@@ -1,25 +1,24 @@
-<select class="ui search dropdown" data-bind="options: allTypes, selectedOptions: chosenType">
-    <!-- <option data-bind="text: $data.eventDetails.eventType" data-bind="click: eventTypeFilter()"></option> -->
-</select>
+<select class="ui search dropdown" data-bind=" options: allTypes, value: chosenType, click: onclick($element.value),"></select>
 
 <!-- <select class="ui search dropdown" data-bind="foreach: allEvents">
     <option data-bind="text: $data.eventDetails.eventSuburb"></option>
 </select> -->
 <!-- <select data-bind="options: availableCountries, selectedOptions: chosenCountries" size="5" multiple="true"></select> -->
 
-<div class="ui input">
+<!-- <div class="ui input">
   <input type="text" data-bind="" placeholder="Search By Type...">
-</div>
+</div> -->
 
 <div class="ui relaxed divided list" data-bind="foreach: allEvents">
   <div class="item left">
     <div class="content" data-bind="click: $parent.eventDetails">
       <a class="header" data-bind="text: $data.eventName"></a>
-      <div class="description"><weather-component></weather-component></div>
     </div>
+
 
   </div>
   <div class="ui segment">
+    <div class="description"><weather-component></weather-component></div>
     <h3 data-bind="text: $data.eventName"></h3>
      Venue: <p data-bind="text: $data.eventDetails.eventSuburb"></p>
      Type: <p data-bind="text: $data.eventDetails.eventType"></p>

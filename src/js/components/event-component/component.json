@@ -9,12 +9,8 @@
       "mode": {
         "type": "string"
       },
-      "cb": {
+      "onclick": {
         "type": "function"
-      },
-
-      "events" : {
-
       }
     }
 }
