@@ -1,4 +1,4 @@
-
+<!--
 <div class="card">
   <div id="weather-img-cover">
     <a>
@@ -31,27 +31,34 @@
       <p class="text-center" data-bind="text: description" id="description"></p>
     </div>
   </div>
-</div>
+</div> -->
 
 
-<div class="ui cards">
-  <div class="card">
+<div class="ui cards ">
+  <div class="card border-2 border-primary">
     <div class="content">
-      <div class="image right floated mini ui" id="icon" data-bind="style: { 'background': iconUrl, 'background-repeat':'no-repeat'}"></div>
+      <div class="float-right" id="weather-img-cover">
+        <a>
+          <div class="image" id="icon" data-bind="style: { 'background': iconUrl, 'background-repeat':'no-repeat'}"></div>
+        </a>
+      </div>
       <div class="header">
         <h1 data-bind="text:tempMeasure" style="display:inline"></h1><span style="vertical-align: super;">&#x2103;</span>
       </div>
-      <div class="meta">
-        Friends of Veronika
-      </div>
+
       <div class="description">
-        Elliot requested permission to view your contact details
-      </div>
-    </div>
-    <div class="extra content">
-      <div class="ui two buttons">
-        <div class="ui basic green button">Approve</div>
-        <div class="ui basic red button">Decline</div>
+        <div class="row">
+
+          <span>
+            <h3 class="ml-4 text-center" data-bind="text:minTemp"></h3>
+          </span>
+          <h6>&#x2103; | </h6>
+
+          <span>
+            <h3 class="ml-2 text-center" data-bind="text:maxTemp"></h3>
+          </span>
+          <h6>&#x2103;</h6>
+        </div>
       </div>
     </div>
   </div>
