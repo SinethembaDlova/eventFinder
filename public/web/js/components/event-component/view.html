@@ -20,12 +20,17 @@
 
   </div>
   <div class="ui segment">
-    <div class="description"></div>
-    <weather-component data-bind="attr: {city : $data.eventDetails.city, date: $data.eventDetails.eventDate}"></weather-component>
-    <h3 data-bind="text: $data.eventName"></h3>
-     Venue: <p data-bind="text: $data.eventDetails.eventSuburb"></p>
-     Type: <p data-bind="text: $data.eventDetails.eventType"></p>
-     Date:  <p data-bind="text: $data.eventDetails.eventDate"></p>
-     Time:  <p data-bind="text: $data.eventDetails.eventTime"></p>
+    <div class="row">
+      <div class="col-md-8">
+        <h3 data-bind="text: $data.eventName"></h3>
+        Venue: <p data-bind="text: $data.eventDetails.eventSuburb"></p>
+        Type: <p data-bind="text: $data.eventDetails.eventType"></p>
+        Date:  <p data-bind="text: $data.eventDetails.eventDate"></p>
+        Time:  <p data-bind="text: $data.eventDetails.eventTime"></p>
+      </div>
+      <div class="col-md-4 mt-4">
+        <weather-component data-bind="attr: {city : $data.eventDetails.city, date: $data.eventDetails.eventDate}"></weather-component>
+      </div>
+    </div>
   </div>
 </div>
