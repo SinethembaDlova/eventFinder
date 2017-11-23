@@ -37,7 +37,7 @@
 <div class="ui cards">
   <div class="card border border-primary ml-auto">
     <div class="content">
-      <div class="float-right" id="weather-img-cover">
+      <div class="float-right mr-4" id="weather-img-cover">
         <a>
           <div class="image" id="icon" data-bind="style: { 'background': iconUrl, 'background-repeat':'no-repeat', 'margin-top': '-12px'}"></div>
         </a>
@@ -58,6 +58,10 @@
             <h3 class="ml-2 text-center" data-bind="text:maxTemp"></h3>
           </span>
           <h6>&#x2103;</h6>
+
+          <div class="ml-5">
+          <p class="text-center float-right" data-bind="text: description" id="description"></p>
+          </div>
         </div>
       </div>
     </div>
